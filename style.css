@@ -1,0 +1,514 @@
+/*
+Theme Name: Whimsy+Child 
+Description: An empty child theme for the Whimsy Framework, ready for you to build something beautiful.
+Version: 1.0
+Author: The Fanciful (Add your name!)
+Author URI: http://www.thefanciful.com (And website!)
+Template: whimsy-framework
+*/
+@import url('../whimsy-framework/style.css'); 
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+
+body { 
+
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+
+}
+
+blockquote, q {
+
+}
+
+
+/* Headlines */
+// Global headline styles
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+
+	}
+
+// Specific headline styles
+h1 {
+	font-size:3em;
+	}
+h2 {
+	font-size:2em;
+	}
+h3 {
+	font-size:1.8em;
+	}
+h4 {
+	font-size:1.4em;
+	}
+h5 {
+	font-size:1.2em;
+	}
+h6 {
+	font-size:0.8em;
+	}
+
+/* Highlight selection colors */
+
+::selection {
+}
+::-moz-selection {
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+
+hr {
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+
+}
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+a, 
+a:visited {
+
+}
+
+a:hover,
+a:focus,
+a:active {
+
+}
+
+.entry-content a, .entry-footer a, #comments a, .widget a {
+
+}
+
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+
+#site-navigation {
+
+}
+.whimsy-nav {
+
+}
+ul.whimsy-nav {
+
+}
+ul.whimsy-nav li a {
+
+}
+
+ul.whimsy-nav li {
+
+}
+
+ul.whimsy-nav a {
+
+}
+
+ul.whimsy-nav li > a:hover {
+
+}
+
+ul.whimsy-nav li {
+
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+
+.widget {
+
+}
+.widget > h3, h1.widget-title {
+
+}
+
+/* Make sure select elements fit in widgets */
+
+.widget select {
+
+}
+
+/* Special Widget Styles */
+
+h1.widget-title {
+
+}
+
+/* Whimsy About Me Widget */
+
+.whimsy-img img{
+
+}
+
+.whimsy-more {
+
+}
+
+/* Whimsy Social Networks Widget */
+
+.widget_widget_whimsy_social {
+
+}
+
+.widget_widget_whimsy_social > .widget-title {
+
+}
+
+ul#widget-whimsy-social {
+
+}
+
+#widget-whimsy-social > li {
+
+}
+#widget-whimsy-social > li > a{
+
+}
+
+#widget-whimsy-social li:before { content: ''; }
+
+/* Search widget */
+
+.widget_search .search-submit {	display: none; }
+
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+10.1 Header Styles
+--------------------------------------------------------------*/
+.site-branding {
+
+}
+.site-branding > hgroup > h1.site-title a,
+.site-branding > hgroup > h2.site-description {
+
+}
+
+#header-container {
+
+}
+
+#masthead {
+
+}
+
+.site-branding > hgroup > h1.site-title {
+
+}
+
+.site-branding > hgroup > h1.site-title a{
+
+}
+
+.site-branding > hgroup > h2.site-description {
+
+}
+.site-branding, 
+.custom-header {
+
+}
+/*--------------------------------------------------------------
+10.2 Posts and pages
+--------------------------------------------------------------*/
+.post {
+
+}
+
+.entry-header {
+
+}
+
+.entry-header > h1.entry-title {
+
+}
+
+.entry-header > h1.entry-title a {
+
+}
+
+.entry-category {
+
+}
+
+body.single .entry-meta {
+
+}
+
+.entry-content {
+
+}
+
+.entry-posted-on,
+.entry-comment-meta {
+
+}
+
+.entry-comment-meta {
+
+}
+
+.entry-footer {
+
+}
+
+.posted-on {
+
+}
+
+.sticky {
+
+}
+
+.hentry {
+
+}
+
+.byline,
+.updated {
+
+}
+
+.single .byline,
+.group-blog .byline {
+
+}
+
+.page-links {
+
+}
+
+.entry-img img {
+
+}
+
+/*--------------------------------------------------------------
+10.4 Comments
+--------------------------------------------------------------*/
+
+.comment-list, 
+.children {
+
+}
+
+.comments-title {
+
+}
+
+.comment { 
+
+}
+
+.children > .comment { 
+
+}
+
+.comment-meta, 
+.comment-content { 
+
+}
+
+.comment-metadata { 
+
+}
+
+.comment-metadata a { 
+
+}
+
+.comment-author b { 
+
+}
+
+.alt { 
+
+}
+
+.avatar { 
+
+}
+
+.comment-content a {
+
+}
+
+.bypostauthor {}
+
+.reply a {
+
+}
+
+/*--------------------------------------------------------------
+10.5 Footer styles
+--------------------------------------------------------------*/
+#colophon, #infinite-footer .container {
+
+}
+#colophon {
+
+}
+
+#footer-menu ul {
+
+}
+
+#footer-menu li {
+
+}
+
+.site-info {
+
+}
+
+.site-info a {
+
+}
+/*--------------------------------------------------------------
+13.0 Template Page Styles
+--------------------------------------------------------------*/
+
+/* 13.1 Mosaic */
+
+#mosaic {
+
+}
+
+#mosaic .sticky.brick {
+
+}
+
+#mosaic .entry-header, 
+#mosaic .entry-content, 
+#mosaic .entry-footer {
+
+}
+
+#mosaic .entry-img img {
+
+}
+
+#mosaic .entry-img  {
+
+}
+
+#mosaic .sticky {
+
+}
+
+#mosaic p { 
+
+}
+
+#mosaic .entry-header > h1.entry-title {
+
+}
+
+#mosaic .posted-on {
+
+}
+
+#mosaic .format-image > .entry-footer, 
+#mosaic .format-image > .entry-content 
+{
+
+}
+
+#mosaic header.entry-header {
+
+}
+
+.brick {
+
+}
+
+.brick {
+
+}
+
+.brick:nth-child(4n+1) {
+
+}
+.brick:nth-child(4n+2) {
+
+}
+.brick:nth-child(4n+3) {
+
+}
+.brick:nth-child(4n+4) {
+
+}
+
+/* DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+@media only screen and (min-width: 768px) {
+	/* Desktop styles go below this line */
+}
