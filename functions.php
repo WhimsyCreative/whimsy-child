@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Load Google Fonts
+ * Load additional Google Fonts
  */
 
 function whimsy_fonts_url() {
@@ -41,65 +41,6 @@ function whimsy_fonts_url() {
     return $fonts_url;
 }
 
-function whimsy_more_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Business Widgets', 'whimsy-framework' ),
-		'id'            => 'business',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget brick %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-	
-	register_sidebar( array(
-		'name'          => __( 'Home Sidebar', 'whimsy-framework' ),
-		'id'            => 'home-sidebar',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-}
-add_action( 'widgets_init', 'whimsy_more_widgets_init' );
-
-function whimsy_waterlily_customize_register ( $wp_customize ) {
-
-    /* Add Skin Settings */
-
-    $wp_customize->add_setting(
-        'whimsy_waterlily_skin',
-        array(
-            'default' => 'one',
-        )
-    );
-     
-    $wp_customize->add_control(
-        'whimsy_waterlily_skin',
-        array(
-            'type' => 'select',
-            'label' => 'Skin',
-            'section' => 'whimsy_framework_section_display',
-            'choices' => array(
-                'one' => 'Nora',
-                'two' => 'Azurea',
-                'three' => 'Karolina',
-                'four' => 'Marliacea',
-            ),
-        )
-    );
-    /* Add Layout Settings */
-
-    $wp_customize->add_setting(
-        'whimsy_waterlily_layout',
-        array(
-            'default' => 'one',
-        )
-    );
-}
-add_action( 'customize_register', 'whimsy_waterlily_customize_register' );
-
 /**
  * Additional style and script file inclusion.
  */
@@ -110,4 +51,3 @@ function whimsy_scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'whimsy_scripts_styles', 15 );
-
