@@ -1,53 +1,26 @@
 <?php
 
-/*
- * Load additional Google Fonts
- */
-
-function whimsy_fonts_url() {
-    $fonts_url = '';
- 
-    /* Translators: If there are characters in your language that are not
-    * supported by raleway, translate this to 'off'. Do not translate
-    * into your own language.
-    */
-    $raleway = _x( 'on', 'Raleway font: on or off', 'whimsy-framework' );
- 
-    /* Translators: If there are characters in your language that are not
-    * supported by Open Sans, translate this to 'off'. Do not translate
-    * into your own language.
-    */
-    $satisfy = _x( 'on', 'Open Sans font: on or off', 'whimsy-framework' );
- 
-    if ( 'off' !== $raleway || 'off' !== $satisfy ) {
-        $font_families = array();
- 
-        if ( 'off' !== $raleway ) {
-            $font_families[] = 'Raleway:400,600';
-        }
- 
-        if ( 'off' !== $satisfy ) {
-            $font_families[] = 'Satisfy';
-        }
- 
-        $query_args = array(
-            'family' => urlencode( implode( '|', $font_families ) ),
-            'subset' => urlencode( 'latin,latin-ext' ),
-        );
- 
-        $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
-    }
- 
-    return $fonts_url;
-}
-
 /**
+ * Include Whimsy Framework Library files.
+ */
+require_once get_stylesheet_directory() . '/library/admin/customize/styles/styles.php';
+new WhimsyStyles();
+
+require_once get_stylesheet_directory() . '/library/admin/customize/bg/bg.php';
+new WhimsyBackgrounds();
+
+/*
  * Additional style and script file inclusion.
  */
 
-function whimsy_scripts_styles() {
-    wp_enqueue_style( 'whimsy-fonts', whimsy_fonts_url(), array(), null );
-    wp_enqueue_style( 'whimsy-style', get_stylesheet_directory_uri() . 'custom.css', '1.0', true, 40 );
+function whimsy_child_scripts_styles() {
+
+    /**
+     * Include new Google fonts
+     */
+    require_once get_stylesheet_directory() . '/library/inc/fonts.php';
+    wp_enqueue_style( 'whimsy-fonts', whimsy_child_fonts_url(), array(), null );
+    wp_enqueue_style( 'whimsy-style', get_stylesheet_directory_uri() . 'custom.css', '1.0.0', true, 400 );
 
 }
-add_action( 'wp_enqueue_scripts', 'whimsy_scripts_styles', 15 );
+add_action( 'wp_enqueue_scripts', 'whimsy_child_scripts_styles', 15 );

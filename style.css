@@ -3,17 +3,21 @@ Theme Name: Whimsy+Child
 Description: An empty child theme for the Whimsy Framework, ready for you to build something beautiful.
 Version: 1.0
 Author: The Fanciful (Add your name!)
-Author URI: http://www.thefanciful.com (And website!)
+Author URI: http://www.thefanciful.com (And your website!)
 Template: whimsy-framework
 */
 @import url('../whimsy-framework/style.css'); 
 
 /*--------------------------------------------------------------
-1.0 - Reset
+1.0 - Globals
 --------------------------------------------------------------*/
 
 body { 
 
+}
+
+#page {
+    
 }
 
 /*--------------------------------------------------------------
