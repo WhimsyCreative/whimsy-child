@@ -8,7 +8,7 @@
 	<li>License URI: http://www.gnu.org/licenses/gpl-2.0.html</li>
 	<li>Requires at least: 3.9</li>
 	<li>Tested up to: 4.7.2</li>
-	<li>Stable tag: 1.0</li>
+	<li>Stable tag: 1.0.1</li>
 	<li>Donate link: http://whimsycreative.co/donate</li>
 </ul>
 
